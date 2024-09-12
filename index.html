@@ -4,58 +4,270 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/AAPD-Chito-Chat/assets/main-cbd40580.js"></script>
-    <link rel="stylesheet" href="/AAPD-Chito-Chat/assets/main-540f3556.css">
+    <title>Chito Chat</title>
+    <script type="module" crossorigin src="/AAPD-Chito-Chat/assets/main-3b99183e.js"></script>
+    <link rel="stylesheet" href="/AAPD-Chito-Chat/assets/main-7bf32d33.css">
   </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>    <h1 class="index-title">我是首頁</h1>
-    <span class="mgc_ABS_fill btn btn-tertiary"></span>
-    <p class="tag tag-primary">我是標籤</p><p class="tag tag-secondary">我是標籤</p>
-
-    <div class="card" style="width: 18rem">
-      <img src="/AAPD-Chito-Chat/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
+    <section class="header">
+    <div class="header-top d-flex justify-content-between">
+        <time class="header-time-text">9:41</time>
+        <img src="/AAPD-Chito-Chat/assets/mobile_top_icon-7c4f910f.svg" alt="mobile simulated diagram">
     </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
+    <div class="header-bot text-gray-500 d-flex justify-content-around align-items-center" style="padding-bottom: 14px;">
+        <!-- 頭貼 -->
+         <a class="px-s" href="#" title="個人頁面">
+             <img src="/AAPD-Chito-Chat/assets/user-headshot-bd70f92a.svg" alt="user-headshot">
+         </a>
+        <div class="d-flex flex-column align-items-start">
+            <!-- 今日資訊 -->
+            <ul class="today-info list-unstyled fs-t7 p-xxs d-flex justify-content-between align-items-center mb-0">
+                <li class="px-xxs py-tiny me-xxs rounded-1 bg-primary-light text-white">火</li>
+                <li class="me-xxs">東京都</li>
+                <li><img class="me-xxs d-inline-block" style="width: 12px;" src="/AAPD-Chito-Chat/assets/sun_cloudy_fill-82f7baf9.svg" alt="weather-icon"></li>
+                <li>24°C | 累積登入 10 天</li>
+            </ul>
+            <!-- 打招呼 -->
+            <div class="user-greeting d-flex align-items-center">
+                <h2 class="fs-h2 fw-700 text-gray-900 me-s ps-xxs mb-0">Yi Chun</h2>
+                <h3 class="fs-h3 fw-700 text-primary mb-0">おはよう！</h3>
+            </div>
         </div>
-      </div>
+        <!-- 通知按鈕 -->
+            <img class="ms-auto pe-s" src="/AAPD-Chito-Chat/assets/bell_ringing_line-f0212167.svg" alt="info-sub">
     </div>
+</section>   
+    <div class="container">
+      <section class="index-banner mt-m px-xs">
+       <div class="swiper indexSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- 文章一 -->
+            <a href="#">
+              <div class="article-card">
+               <!-- 圖片 -->
+                <img class="card-img" src="/AAPD-Chito-Chat/assets/homepage-banner-1-f485b2d8.png" alt="日本的蛙化現象觀察">
+                <!-- 文蓋圖 -->
+                <div class="card-img-overlay p-m d-flex align-items-end">
+                 <!-- 文章標題＆內容簡介 -->
+                 <div class="article-intro">
+                   <h3 class="text-white fs-h3 fw-700">日本的蛙化現象觀察</h3>
+                   <p class="text-white fs-t8 article-text-truncate mb-0" style="width: 70%;">「蛙化現象」一開始由心理學家藤澤伸介提出，從童話《青蛙王子》衍生而來，指的是當女生得知喜歡的人也喜歡自己後，就變得不喜歡對方了，這樣的現象可能來自女性的自卑感，「他怎麼會喜歡這麼普通的我？」，而對對方感到幻滅，又或者女生只是享受著單戀的過程，喜歡保持距離的曖昧戀愛感，但並不想實際和對方談戀愛。<br>
+                   但根據日本媒體《TBS NEWS DIG》街訪調查，「蛙化現象」一詞在年輕人間有了新的解釋，指的是「喜歡的男生讓人感到幻滅的行為」，即使女生原本對該男性抱持好感，也可能因某些生活小細節，戀愛感就突然冷卻，眼中的王子突然變成青蛙。</p>
+                 </div>
+                 <!-- 連結 -->
+                  <div class="article-link">
+                     <p class="text-white fs-t6 text-nowrap align-middle mb-0">看全文<span class="material-symbols-outlined fs-t6 align-middle ms-xxs"> arrow_forward_ios</span></p>
+                  </div>
+                </div>
+              </div>
+            </a>  
+          </div>
+          <!-- 文章二 -->
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="article-card">
+               
+                <img class="card-img" src="/AAPD-Chito-Chat/assets/homepage-banner-1-f485b2d8.png" alt="日本的蛙化現象觀察">
+                
+                <div class="card-img-overlay p-m d-flex align-items-end">
+                 
+                 <div class="article-intro">
+                   <h3 class="text-white fs-h3 fw-700">日本的蛙化現象觀察</h3>
+                   <p class="text-white fs-t8 article-text-truncate mb-0" style="width: 70%;">「蛙化現象」一開始由心理學家藤澤伸介提出，從童話《青蛙王子》衍生而來，指的是當女生得知喜歡的人也喜歡自己後，就變得不喜歡對方了，這樣的現象可能來自女性的自卑感，「他怎麼會喜歡這麼普通的我？」，而對對方感到幻滅，又或者女生只是享受著單戀的過程，喜歡保持距離的曖昧戀愛感，但並不想實際和對方談戀愛。<br>
+                   但根據日本媒體《TBS NEWS DIG》街訪調查，「蛙化現象」一詞在年輕人間有了新的解釋，指的是「喜歡的男生讓人感到幻滅的行為」，即使女生原本對該男性抱持好感，也可能因某些生活小細節，戀愛感就突然冷卻，眼中的王子突然變成青蛙。</p>
+                 </div>
+                 
+                  <div class="article-link">
+                     <p class="text-white fs-t6 text-nowrap align-middle mb-0">看全文<span class="material-symbols-outlined fs-t6 align-middle ms-xxs"> arrow_forward_ios</span></p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- ↓輪播的div -->
+        </div>
+         <!-- 分頁器 -->
+        <!-- <div class="indexSwiper-pagination"></div> -->
+       </div>
+      </section>
+    </div> 
+
+      <div class="container">
+        <section class="jap-learning mt-m py-s px-m">
+          <h3 class="fs-h3 fw-700 text-gray-900 mb-s">10分鐘學日文</h3>
+          <div class="d-flex justify-content-between">
+             <!-- 每日一句 -->
+             <section class="jap-learning-content bg-white d-flex flex-column justify-content-between">
+               <div class="jap-learning-title d-flex gap-xs">
+                 <h5 class="fs-h5 py-tiny px-xxs bg-primary-light text-white rounded-tiny">每</h5>
+                 <h5 class="fs-h5 py-tiny px-xxs bg-primary-light text-white rounded-tiny">日</h5>
+                 <h5 class="fs-h5 py-tiny px-xxs bg-primary-light text-white rounded-tiny">一</h5>
+                 <h5 class="fs-h5 py-tiny px-xxs bg-primary-light text-white rounded-tiny">句</h5>
+               </div>
+               <!-- 標註日文假名 -->
+               <div class="jap-vacb fs-t4 text-gray-900 mb-xl">
+                 <ruby>
+                   駆逐
+                   <rp>(</rp>
+                   <rt class="fs-t7 mb-tiny">くちく</rt>
+                   <rp>)</rp> 
+                 </ruby>
+                 <span>してやる</span>
+               </div>            
+             </section>
+             <!-- 課程進度 -->
+             <section class="jap-learning-content py-s px-xs bg-white d-flex flex-column justify-content-between">
+               <div class="jap-learning-title d-flex gap-xs mx-xs">
+                 <h5 class="fs-h5 py-tiny px-xxs bg-primary-light text-white rounded-tiny">課</h5>
+                 <h5 class="fs-h5 py-tiny px-xxs bg-primary-light text-white rounded-tiny">程</h5>
+                 <h5 class="fs-h5 py-tiny px-xxs bg-primary-light text-white rounded-tiny">進</h5>
+                 <h5 class="fs-h5 py-tiny px-xxs bg-primary-light text-white rounded-tiny">度</h5>
+               </div>
+               <div class="course-progress text-primary rounded-circle mt-xs mb-xl">
+                 <p class="course-progress-number">0<span class="course-progress-percentage">%</span></p>
+               </div>            
+             </section>
+           </div>
+        </section>
+      </div>
+      <div class="container">
+        <section class="nearby-people mt-m py-s px-xs">
+          <h3 class="fs-h3 fw-700 text-gray-900">附近都有誰</h3>
+          <div class="nearby-people-wrapper bg-white rounded-2 py-m px-s d-flex align-items-end gap-xs">
+            <section class="nearby-people-img flex-shrink-0">
+              <img class="object-fit-cover" style="width: 72px;" src="/AAPD-Chito-Chat/assets/avatar-1-0db8794f.png" alt="Mike">
+            </section>
+            <section class="nearby-people-text">
+              <div class="nearby-people-title d-flex align-items-start">
+                <h4 class="fs-h4 fw-700 pt-tiny">Mike</h4>
+                <div class="tag-sm tag-gray mx-xxs text-nowrap">留學生</div>
+                <div class="tag-sm tag-gray mx-xxs text-nowrap">ENTJ</div>
+              </div>
+              <div class="ms-3">
+                <p class="fs-t7 article-text-truncate mb-0 mt-auto">我是台灣人，剛來到東京上大學，希望能認識更多的朋友，一起在日本快樂的生活～</p>
+              </div>
+            </section>
+            <section class="nearby-people-btn">
+              <div class="btn btn-secondary fs-t7 text-nowrap" style="line-height: 17px;">打招呼</div>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="nearby-activity mt-m py-s px-m">
+          <h3 class="fs-h3 fw-700 text-gray-900">附近的活動</h3>
+          <section class="nearby-activity-map">
+            <img class="rounded-3 mb-s" src="/AAPD-Chito-Chat/assets/map-f0089f2c.png" alt="nearby-activity-map">
+          </section>
+          <ul class="nearby-activity-list list-unstyled">
+            <!-- 活動一 -->
+            <li class="nearby-activity-card p-m bg-white border-gray-100 rounded-2 text-gray-900 mb-s">
+              <div class="d-flex align-items-end">
+                <!-- 活動介紹 -->
+                <div class="activity-card-intro me-s" style="width: 189px;">
+                  <a href="#" class="text-nowrap tag tag-primary">語言</a>
+                  <a href="#" class="text-nowrap tag tag-secondary">預約 • 20人 </a>
+                  <h3 class="ts-h3 fw-700 mb-0 py-xs">語言交流會</h3>
+                  <p class="fs-t6 article-text-truncate">歡迎參加語言交流會，通過小組討論和互動遊戲提升語言技能，結交來自世界各地的新朋友！</p>
+                </div>
+                <!-- 活動圖片 -->
+                <div class="activity-card-img">
+                  <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/activ-1-472c886d.png" alt="語言交流會">
+                </div>
+              </div>
+              <!-- 活動時間、地區 -->
+              <ul class="activity-card-info list-unstyled d-flex align-items-center mt-xs">
+                <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                <!-- 我是分隔線 -->
+                <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                <li style="background: transparent; height: 12px; width: 6px;"></li>
+                <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+              </ul>
+            </li>
+            <!-- 活動二 -->
+            <li class="nearby-activity-card p-m bg-white border-gray-100 rounded-2 text-gray-900 mb-s">
+              <div class="d-flex align-items-end">
+                <!-- 活動介紹 -->
+                <div class="activity-card-intro me-s" style="width: 189px;">
+                  <a href="#" class="text-nowrap tag tag-primary">就職</a>
+                  <a href="#" class="text-nowrap tag tag-secondary">預約 • 22人</a>
+                  <h3 class="ts-h3 fw-700 mb-0 py-xs">企業面試準備</h3>
+                  <p class="fs-t6 article-text-truncate">面試前需研究公司背景、準備回答常見問題並提前訓練自信表達。穿著適當且準時到達面試地點，展現出對職位的熱情和專業素養。</p>
+                </div>
+                <!-- 活動圖片 -->
+                <div class="activity-card-img">
+                  <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/activ-2-043376ac.png" alt="企業面試準備">
+                </div>
+              </div>
+              <!-- 活動時間、地區 -->
+              <ul class="activity-card-info list-unstyled d-flex align-items-center mt-xs">
+                <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                <!-- 我是分隔線 -->
+                <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                <li style="background: transparent; height: 12px; width: 6px;"></li>
+                <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+              </ul>
+            </li>
+            <!-- 活動三 -->
+            <li class="nearby-activity-card p-m bg-white border-gray-100 rounded-2 text-gray-900 mb-s">
+              <div class="d-flex align-items-end">
+                <!-- 活動介紹 -->
+                <div class="activity-card-intro me-s" style="width: 189px;">
+                  <a href="#" class="text-nowrap tag tag-tertiary">文化</a>
+                  <a href="#" class="text-nowrap tag tag-secondary">預約 • 2人 </a>
+                  <h3 class="ts-h3 fw-700 mb-0 py-xs">揪團去夏日慶典</h3>
+                  <p class="fs-t6 article-text-truncate">來感受夏日慶典的熱情與歡樂吧！搭伴共赴煙火盛宴，品味美食，感受流光溢彩的瞬間，讓我們一同創造美好回憶！</p>
+                </div>
+                <!-- 活動圖片 -->
+                <div class="activity-card-img">
+                  <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/activ-3-a0fd29ad.png" alt="揪團去夏日慶典">
+                </div>
+              </div>
+              <!-- 活動時間、地區 -->
+              <ul class="activity-card-info list-unstyled d-flex align-items-center mt-xs">
+                <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-tertiary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                <!-- 我是分隔線 -->
+                <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                <li style="background: transparent; height: 12px; width: 6px;"></li>
+                <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-tertiary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+              </ul>
+            </li>
+            <!-- 活動四 -->
+            <li class="nearby-activity-card p-m bg-white border-gray-100 rounded-2 text-gray-900 mb-s">
+              <div class="d-flex align-items-end">
+                <!-- 活動介紹 -->
+                <div class="activity-card-intro me-s" style="width: 189px;">
+                  <a href="#" class="text-nowrap tag tag-tertiary">就業</a>
+                  <a href="#" class="text-nowrap tag tag-secondary">預約 • 21人 </a>
+                  <h3 class="ts-h3 fw-700 mb-0 py-xs">就業指南研討會</h3>
+                  <p class="fs-t6 article-text-truncate">這場研討會旨在為即將大學畢業的學生提供全面的就業指導。我們將討論大學畢業後的就業趨勢和挑戰，以及如何準備和撰寫出色的履歷和求職信。活動還包括面試技巧的分享和模擬面試，幫助參加者準備迎接真實的職場挑戰。</p>
+                </div>
+                <!-- 活動圖片 -->
+                <div class="activity-card-img">
+                  <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/activ-4-556ee854.png" alt="就業指南研討會">
+                </div>
+              </div>
+              <!-- 活動時間、地區 -->
+              <ul class="activity-card-info list-unstyled d-flex align-items-center mt-xs">
+                <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-tertiary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                <!-- 我是分隔線 -->
+                <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                <li style="background: transparent; height: 12px; width: 6px;"></li>
+                <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-tertiary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </section>
+      </div>
+
 
     <footer class="footer">我是 footer</footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
