@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>找朋友</title>
+    <script type="module" crossorigin src="/AAPD-Chito-Chat/assets/main-5b7a05ca.js"></script>
+    <link rel="stylesheet" href="/AAPD-Chito-Chat/assets/main-6f73b5d1.css">
+  </head>
+  <body class="header-bg-friends" style="padding-top: 54px; padding-bottom: 75px;">
+    <section class="friends-bg-top fixed-top" style="width: 375px; margin: 0 auto;">
+    <div class="header-top d-flex justify-content-between">
+        <time class="header-time-text">9:41</time>
+        <img src="/AAPD-Chito-Chat/assets/mobile_top_icon-7c4f910f.svg" alt="mobile simulated diagram">
+    </div>
+</section>
+    <div class="container py-xs d-flex justify-content-between align-items-center">
+      <a href="myChat.html" class="position-relative">
+        <img src="/AAPD-Chito-Chat/assets/chat-f6c20f46.svg" alt="">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-compl-500 chat-hint">1 <span class="visually-hidden">unread messages</span></span>
+      </a>
+      <h2 class="fw-700 fs-h2 mb-0">探索朋友</h2>
+      <a href="myFriends.html">
+        <img src="/AAPD-Chito-Chat/assets/smile-323a1e16.svg" alt="">
+      </a>
+    </div>
+
+    <div class="container text-end">
+      <a class="fw-700 fs-t6 text-gray-500 text-decoration-underline" data-bs-toggle="modal" data-bs-target="#filterModal">篩選</a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen h-auto fixed-bottom">
+        <div class="modal-content rounded-top-5">
+          <div class="modal-header justify-content-center pb-0 border-0">
+            <h1 class="modal-title fs-h3 fw-700" id="filterModalLabel">篩選條件</h1>
+            <button type="button" class="btn-close position-absolute end-0 p-xxs me-3xl" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-l">
+            <div class="mb-l">
+              <h4 class="text-gray-400 fw-700 d-flex align-items-top ms-xxs mb-0" style="padding-bottom: 10px;">距離</h4>
+              <div class="border-top pt-s d-flex flex-wrap">
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="within-1-km" class="fs-t4">
+                    <input type="checkbox" id="within-1-km" name="within-1-km" />
+                    <span class="filterCheckbox">1km 以內</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="within-half-km" class="fs-t4">
+                    <input type="checkbox" id="within-half-km" name="within-half-km" />
+                    <span class="filterCheckbox">0.5km 以內</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny">
+                  <label for="within-5-km" class="fs-t4">
+                    <input type="checkbox" id="within-5-km" name="within-5-km" />
+                    <span class="filterCheckbox">5km 以內</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-l">
+              <h4 class="text-gray-400 fw-700 d-flex align-items-top ms-xxs mb-0" style="padding-bottom: 10px;">身份</h4>
+              <div class="border-top pt-s d-flex flex-wrap">
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="internationalStudent" class="fs-t4">
+                    <input type="checkbox" id="internationalStudent" name="internationalStudent" />
+                    <span class="filterCheckbox">在日留學生</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="officeWorker" class="fs-t4">
+                    <input type="checkbox" id="officeWorker" name="officeWorker" />
+                    <span class="filterCheckbox">上班族</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny">
+                  <label for="womenInJapan" class="fs-t4">
+                    <input type="checkbox" id="womenInJapan" name="womenInJapan" />
+                    <span class="filterCheckbox">在日婦女</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="workingHoliday" class="fs-t4">
+                    <input type="checkbox" id="workingHoliday" name="workingHoliday" />
+                    <span class="filterCheckbox">打工度假</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div style="margin-bottom: 56px;">
+              <h4 class="text-gray-400 fw-700 d-flex align-items-top ms-xxs mb-0" style="padding-bottom: 10px;">MBTI</h4>
+              <div class="border-top pt-s d-flex flex-wrap">
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="type-I" class="fs-t4">
+                    <input type="checkbox" id="type-I" name="type-I" />
+                    <span class="filterCheckbox">E人</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="type-E" class="fs-t4">
+                    <input type="checkbox" id="type-E" name="type-E" />
+                    <span class="filterCheckbox">I人</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer pt-0 pb-l px-m border-0">
+            <button type="button" class="btn btn-outline-secondary w-100 m-0" data-bs-dismiss="modal" aria-label="Close">清除</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-m">
+      <button type="button" class="bg-white d-flex py-m px-s rounded border border-gray-100 mb-m" data-bs-toggle="modal" data-bs-target="#profileModal">
+        <div class="flex-shrink-0 position-relative me-s">
+          <img src="/AAPD-Chito-Chat/assets/avatar-1-c978db5e.png" alt="" class="rounded-circle">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEXSURBVHgB7ZK/asJQFIe/G0OxaUmHCAZCW+zgJLgUuzjpJAi+heBbOHTxAQo+joNThggufYGCfxoRA6XRlqbXtIR0aOnNJvgtP8498N1zL0fAQ4QCt8xwuf+1r6ULXRdxVqvW94nSXV+OdNFoOORyEe32DZvNlsHAk/mOCsmEnc419bpNv39Hq3WFZeXp9SqUyyYqxELTPJGT7GTq1Go2pdIF3W6FxeKFQuFUXRgEO4QQFItnP5q2bbBeh6iQ/GEURUwmKyl5wnHOcd05mqbFk2cSjkYzDENnOn2m2bzE918ZDh+zC/eMx3P5/DeWyy2e55PPa6gihSIpgmC/IkLKVnGGYUS6/x/ER5bt/QP1Nx2FR+EBCD8BeO9REzJt9F8AAAAASUVORK5CYII=" alt="" class="rounded-circle position-absolute start-0 bottom-0">
+        </div>
+        <div>
+          <div class="d-flex align-items-center mb-xs">
+            <h4 class="fw-700 me-xxs mb-0">Elly</h4>
+            <span class="tag tag-gray pb-tiny me-xs mb-0">留學生</span>
+            <span class="tag tag-gray pb-tiny mb-0">INFP</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="fs-t7 article-text-truncate text-start me-s mb-0 ">我是台灣人，剛來到東京上大學，希望能認識更多的朋友，一起在日本快樂的生活～</span>
+            <span class="fs-t7 flex-shrink-0 btn btn-secondary border-0" style="line-height: 1.4;">打招呼</span>
+          </div>
+        </div>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen h-auto fixed-bottom">
+          <div class="modal-content rounded-top-5">
+            <div class="modal-header justify-content-center pb-0 border-0">
+              <h1 class="modal-title fs-h3 fw-700" id="profileModalLabel">詳細資訊</h1>
+              <button type="button" class="btn-close position-absolute end-0 p-xxs me-3xl" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body py-l">
+              <div class="d-flex mb-l">
+                <img src="/AAPD-Chito-Chat/assets/avatar-1-c978db5e.png" alt="" class="rounded-circle me-s">
+                <div class="d-flex align-items-center">
+                  <h4 class="fw-700 me-xxs mb-0">Elly</h4>
+                  <span class="tag tag-gray pb-tiny me-xs mb-0">留學生</span>
+                  <span class="tag tag-gray pb-tiny me-xs mb-0">INFP</span>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEXSURBVHgB7ZK/asJQFIe/G0OxaUmHCAZCW+zgJLgUuzjpJAi+heBbOHTxAQo+joNThggufYGCfxoRA6XRlqbXtIR0aOnNJvgtP8498N1zL0fAQ4QCt8xwuf+1r6ULXRdxVqvW94nSXV+OdNFoOORyEe32DZvNlsHAk/mOCsmEnc419bpNv39Hq3WFZeXp9SqUyyYqxELTPJGT7GTq1Go2pdIF3W6FxeKFQuFUXRgEO4QQFItnP5q2bbBeh6iQ/GEURUwmKyl5wnHOcd05mqbFk2cSjkYzDENnOn2m2bzE918ZDh+zC/eMx3P5/DeWyy2e55PPa6gihSIpgmC/IkLKVnGGYUS6/x/ER5bt/QP1Nx2FR+EBCD8BeO9REzJt9F8AAAAASUVORK5CYII=" alt="" class="rounded-circle">
+                </div>
+              </div>
+              <div class="mb-l">
+                <h4 class="text-gray-400 fw-700 d-flex align-items-top mb-m"><span class="me-tiny" style="margin-top: -2px;">👉🏻</span>關於我</h4>
+                <p class="mb-s">我是台灣人，剛來到東京上大學，希望能認識更多的朋友，一起在日本快樂的生活～</p>
+                <p class="d-flex align-items-center mb-xxs"><span class="material-symbols-outlined text-primary-lighter me-xs">location_on</span>東京 涉谷區</p>
+                <p class="d-flex align-items-center mb-0"><span class="material-symbols-outlined text-primary-lighter me-xs">import_contacts</span>日文 N2</p>
+              </div>
+              <div>
+                <h4 class="text-gray-400 fw-700 d-flex align-items-top mb-m">📸 Photo Square</h4>
+                <ul class="list-unstyled d-flex flex-wrap mb-xxs" style="gap: 12px;">
+                  <li><img src="/AAPD-Chito-Chat/assets/Photo-Square-1-651ddec0.png" alt=""></li>
+                  <li><img src="/AAPD-Chito-Chat/assets/Photo-Square-2-4f2cf22a.png" alt=""></li>
+                  <li><img src="/AAPD-Chito-Chat/assets/Photo-Square-3-ad75366f.png" alt=""></li>
+                  <li><img src="/AAPD-Chito-Chat/assets/Photo-Square-4-265a925f.png" alt=""></li>
+                  <li><img src="/AAPD-Chito-Chat/assets/Photo-Square-5-bf227f9d.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer pt-0 pb-l px-m border-0">
+              <a href="chatRoom.html" class="btn btn-secondary w-100 m-0">打招呼 👋🏻</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="bg-white d-flex py-m px-s rounded border border-gray-100 mb-m">
+        <div class="flex-shrink-0 position-relative me-s">
+          <img src="/AAPD-Chito-Chat/assets/avatar-2-0f3f316d.png" alt="" class="rounded-circle">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEXSURBVHgB7ZK/asJQFIe/G0OxaUmHCAZCW+zgJLgUuzjpJAi+heBbOHTxAQo+joNThggufYGCfxoRA6XRlqbXtIR0aOnNJvgtP8498N1zL0fAQ4QCt8xwuf+1r6ULXRdxVqvW94nSXV+OdNFoOORyEe32DZvNlsHAk/mOCsmEnc419bpNv39Hq3WFZeXp9SqUyyYqxELTPJGT7GTq1Go2pdIF3W6FxeKFQuFUXRgEO4QQFItnP5q2bbBeh6iQ/GEURUwmKyl5wnHOcd05mqbFk2cSjkYzDENnOn2m2bzE918ZDh+zC/eMx3P5/DeWyy2e55PPa6gihSIpgmC/IkLKVnGGYUS6/x/ER5bt/QP1Nx2FR+EBCD8BeO9REzJt9F8AAAAASUVORK5CYII=" alt="" class="rounded-circle position-absolute start-0 bottom-0">
+        </div>
+        <div>
+          <div class="d-flex align-items-center mb-xs">
+            <h4 class="fw-700 me-xxs mb-0">谷沢佳穂</h4>
+            <span class="tag tag-gray pb-tiny me-xs mb-0">留學生</span>
+            <span class="tag tag-gray pb-tiny mb-0">INFP</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="fs-t7 article-text-truncate text-start me-s mb-0 ">我是台灣人，剛來到東京上大學，希望能認識更多的朋友，一起在日本快樂的生活～</span>
+            <span class="fs-t7 flex-shrink-0 btn btn-secondary border-0" style="line-height: 1.4;">打招呼</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white d-flex py-m px-s rounded border border-gray-100 mb-m">
+        <div class="flex-shrink-0 position-relative me-s">
+          <img src="/AAPD-Chito-Chat/assets/avatar-3-665dfa28.png" alt="" class="rounded-circle">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEXSURBVHgB7ZK/asJQFIe/G0OxaUmHCAZCW+zgJLgUuzjpJAi+heBbOHTxAQo+joNThggufYGCfxoRA6XRlqbXtIR0aOnNJvgtP8498N1zL0fAQ4QCt8xwuf+1r6ULXRdxVqvW94nSXV+OdNFoOORyEe32DZvNlsHAk/mOCsmEnc419bpNv39Hq3WFZeXp9SqUyyYqxELTPJGT7GTq1Go2pdIF3W6FxeKFQuFUXRgEO4QQFItnP5q2bbBeh6iQ/GEURUwmKyl5wnHOcd05mqbFk2cSjkYzDENnOn2m2bzE918ZDh+zC/eMx3P5/DeWyy2e55PPa6gihSIpgmC/IkLKVnGGYUS6/x/ER5bt/QP1Nx2FR+EBCD8BeO9REzJt9F8AAAAASUVORK5CYII=" alt="" class="rounded-circle position-absolute start-0 bottom-0">
+        </div>
+        <div>
+          <div class="d-flex align-items-center mb-xs">
+            <h4 class="fw-700 me-xxs mb-0">吳浩子</h4>
+            <span class="tag tag-gray pb-tiny me-xs mb-0">留學生</span>
+            <span class="tag tag-gray pb-tiny mb-0">INFP</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="fs-t7 article-text-truncate text-start me-s mb-0 ">我是台灣人，剛來到東京上大學，希望能認識更多的朋友，一起在日本快樂的生活～</span>
+            <span class="fs-t7 flex-shrink-0 btn btn-secondary border-0" style="line-height: 1.4;">打招呼</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white d-flex py-m px-s rounded border border-gray-100 mb-m">
+        <div class="flex-shrink-0 position-relative me-s">
+          <img src="/AAPD-Chito-Chat/assets/avatar-4-e7d3a17f.png" alt="" class="rounded-circle">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEXSURBVHgB7ZK/asJQFIe/G0OxaUmHCAZCW+zgJLgUuzjpJAi+heBbOHTxAQo+joNThggufYGCfxoRA6XRlqbXtIR0aOnNJvgtP8498N1zL0fAQ4QCt8xwuf+1r6ULXRdxVqvW94nSXV+OdNFoOORyEe32DZvNlsHAk/mOCsmEnc419bpNv39Hq3WFZeXp9SqUyyYqxELTPJGT7GTq1Go2pdIF3W6FxeKFQuFUXRgEO4QQFItnP5q2bbBeh6iQ/GEURUwmKyl5wnHOcd05mqbFk2cSjkYzDENnOn2m2bzE918ZDh+zC/eMx3P5/DeWyy2e55PPa6gihSIpgmC/IkLKVnGGYUS6/x/ER5bt/QP1Nx2FR+EBCD8BeO9REzJt9F8AAAAASUVORK5CYII=" alt="" class="rounded-circle position-absolute start-0 bottom-0">
+        </div>
+        <div>
+          <div class="d-flex align-items-center mb-xs">
+            <h4 class="fw-700 me-xxs mb-0">吉長まさと</h4>
+            <span class="tag tag-gray pb-tiny me-xs mb-0">留學生</span>
+            <span class="tag tag-gray pb-tiny mb-0">INFP</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="fs-t7 article-text-truncate text-start me-s mb-0 ">我是台灣人，剛來到東京上大學，希望能認識更多的朋友，一起在日本快樂的生活～</span>
+            <span class="fs-t7 flex-shrink-0 btn btn-secondary border-0" style="line-height: 1.4;">打招呼</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white d-flex py-m px-s rounded border border-gray-100">
+        <div class="flex-shrink-0 position-relative me-s">
+          <img src="/AAPD-Chito-Chat/assets/avatar-5-2ebd981c.png" alt="" class="rounded-circle">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEXSURBVHgB7ZK/asJQFIe/G0OxaUmHCAZCW+zgJLgUuzjpJAi+heBbOHTxAQo+joNThggufYGCfxoRA6XRlqbXtIR0aOnNJvgtP8498N1zL0fAQ4QCt8xwuf+1r6ULXRdxVqvW94nSXV+OdNFoOORyEe32DZvNlsHAk/mOCsmEnc419bpNv39Hq3WFZeXp9SqUyyYqxELTPJGT7GTq1Go2pdIF3W6FxeKFQuFUXRgEO4QQFItnP5q2bbBeh6iQ/GEURUwmKyl5wnHOcd05mqbFk2cSjkYzDENnOn2m2bzE918ZDh+zC/eMx3P5/DeWyy2e55PPa6gihSIpgmC/IkLKVnGGYUS6/x/ER5bt/QP1Nx2FR+EBCD8BeO9REzJt9F8AAAAASUVORK5CYII=" alt="" class="rounded-circle position-absolute start-0 bottom-0">
+        </div>
+        <div>
+          <div class="d-flex align-items-center mb-xs">
+            <h4 class="fw-700 me-xxs mb-0">大澤しずか</h4>
+            <span class="tag tag-gray pb-tiny me-xs mb-0">留學生</span>
+            <span class="tag tag-gray pb-tiny mb-0">INFP</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="fs-t7 article-text-truncate text-start me-s mb-0 ">我是台灣人，剛來到東京上大學，希望能認識更多的朋友，一起在日本快樂的生活～</span>
+            <span class="fs-t7 flex-shrink-0 btn btn-secondary border-0" style="line-height: 1.4;">打招呼</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-bottom mx-auto" style="width: 375px;">
+    <section class="footer bg-white py-xs text-gray-300 fs-h6 fw-700 mt-3xl shadow-md position-relative">
+        <a href="index.html" class="footer-home-btn text-white bg-primary rounded-circle position-absolute top-25 start-50 translate-middle">
+            <div class="position-relative" style="width: 40px; height: 40px;">
+                <span class="material-symbols-outlined position-absolute top-50 start-50 translate-middle">home</span>
+            </div>
+        </a>
+    
+        <!-- <a href="#" class="footer-home-btn text-white material-symbols-outlined bg-primary rounded-circle position-absolute top-25 start-50 translate-middle p-xs" style="width: 40px; height: 40px;">home
+        </a> -->
+    
+        <ul class="nav d-flex justify-content-around">
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="friends.html" style="width: 65px;" class="position-relative text-primary">
+                    <span class="material-symbols-outlined">handshake</span>
+                    <p class="mb-0">找朋友</p>
+                    <span class="rounded-circle bg-compl-500 position-absolute translate-middle" style="width: 8px; height: 8px; right: 10px; top: 3px;"></span>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="article.html" style="width: 65px;" class=" ">
+                    <div class="mb-tiny">
+                        <span class="mgc_balloon_2_line fs-h2"></span>
+                    </div>
+                    <p class="mb-0">活動</p>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-end text-center" >
+                <a href="index.html" style="width: 65px;" class="pt-xl ">
+                <p class="mb-0">首頁</p>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="learning-main.html" style="width: 65px;" class=" ">
+                    <span class="material-symbols-outlined">import_contacts</span>
+                    <p class="mb-0">學日文</p>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="myChat.html" style="width: 65px;" class=" ">
+                    <span class="material-symbols-outlined">person</span>
+                    <p class="mb-0">個人</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
+    
+  </body>
+</html>

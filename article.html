@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>探索文章</title>
+    <script type="module" crossorigin src="/AAPD-Chito-Chat/assets/main-5b7a05ca.js"></script>
+    <link rel="stylesheet" href="/AAPD-Chito-Chat/assets/main-6f73b5d1.css">
+  </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <body class="header-bg-article" style="width: 375px; padding-top: 54px; padding-bottom: 75px;">
+    <section class="article-bg-top fixed-top" style="width: 375px; margin: 0 auto;">
+    <div class="header-top d-flex justify-content-between">
+        <time class="header-time-text">9:41</time>
+        <img src="/AAPD-Chito-Chat/assets/mobile_top_icon-7c4f910f.svg" alt="mobile simulated diagram">
+    </div>
+</section> 
+
+    <!-- 探索文章、參與活動 頁簽 -->
+    <div class="container pt-xs">
+                <!-- Nav tabs -->
+        <ul class="nav nav-tabs justify-content-center" id="tertiaryTab" role="tablist">
+            <li class="nav-item w-50" role="presentation">
+            <button class="nav-link nav-article w-100 text-center active fs-h3 fw-700 py-s px-xs d-flex flex-column align-items-center" id="article-tab" data-bs-toggle="tab" data-bs-target="#article" type="button" role="tab" aria-controls="article" aria-selected="true">探索文章
+                <span class="w-100 active-deco-tertiary mt-xxs"></span>
+            </button>
+            </li>
+            <li class="nav-item w-50" role="presentation">
+            <button class="nav-link nav-article w-100 text-center fs-h3 fw-700 py-s px-xs d-flex flex-column align-items-center" id="event-tab" data-bs-toggle="tab" data-bs-target="#event" type="button" role="tab" aria-controls="event" aria-selected="false">參與活動
+                <span class="w-100 active-deco-tertiary mt-xxs"></span>
+            </button>
+            </li>
+        </ul>
+    </div>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="article" role="tabpanel" aria-labelledby="article-tab" tabindex="0">
+        <!-- 探索文章 -->
+         <!-- search bar -->
+        <div class="container">
+            <form class="article-search-input position-relative my-m" role="search">
+                <span class="text-gray-500 material-symbols-outlined position-absolute top-50 translate-middle-y" style="left: 10px; width: 20px; height: 20px;">search</span>
+                <input class="form-control d-inline-block" type="search" placeholder="搜尋" aria-label="Search">
+                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+        </div>
+
+        <div class="container">
+          <!-- 熱門精選 -->
+            <section class="article-selected">
+                <h3 class="h3 fs-h3 fw-700 text-gray-900">熱門精選</h3>
+                <div class="swiper articleSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- 卡片一 -->
+                            <a href="#">
+                                <div class="article-card p-m bg-white rounded-3">
+                                    <img src="/AAPD-Chito-Chat/assets/article-banner-1-be4727c3.png" alt="蛙化現象">
+                                    <div class="d-flex align-items-start my-xs">
+                                        <h3 class="fs-h3 fw-700 text-gray-900 mb-0 me-xs">蛙化現象</h3>
+                                        <a href="#" class="tag tag-primary">生活</a>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-s">
+                                        <ul class="list-unstyled d-flex align-items-center gap-s">
+                                            <li>
+                                                <a class="d-flex" href="#" title="comment">
+                                                    <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">chat
+                                                    </span>
+                                                    <p class="fs-t8">520</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex" href="#" title="comment">
+                                                    <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">favorite
+                                                    </span>
+                                                    <p class="fs-t8">1314</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex" href="#" title="comment">
+                                                    <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">share
+                                                    </span>
+                                                    <p class="fs-t8">111</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#">
+                                             <p class="text-gray-900 fs-t6 text-nowrap align-middle mb-0">看內容<span class="material-symbols-outlined fs-t6 text-black align-middle ms-xxs">arrow_forward_ios</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- 卡片二 -->
+                            <a href="#">
+                                <div class="article-card p-m bg-white rounded-3">
+                                    <img src="/AAPD-Chito-Chat/assets/article-banner-1-be4727c3.png" alt="蛙化現象">
+                                    <div class="d-flex align-items-start my-xs">
+                                        <h3 class="fs-h3 fw-700 text-gray-900 mb-0 me-xs">蛙化現象</h3>
+                                        <a href="#" class="tag tag-primary">生活</a>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-s">
+                                        <ul class="list-unstyled d-flex align-items-center gap-s">
+                                            <li>
+                                                <a class="d-flex" href="#" title="comment">
+                                                    <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">chat
+                                                    </span>
+                                                    <p class="fs-t8">520</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex" href="#" title="comment">
+                                                    <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">favorite
+                                                    </span>
+                                                    <p class="fs-t8">1314</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex" href="#" title="comment">
+                                                    <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">share
+                                                    </span>
+                                                    <p class="fs-t8">111</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#">
+                                             <p class="text-gray-900 fs-t6 text-nowrap align-middle mb-0">看內容<span class="material-symbols-outlined fs-t6 text-black align-middle ms-xxs">arrow_forward_ios</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- 卡片三 -->
+                            <a href="#">
+                                <div class="article-card p-m bg-white rounded-3">
+                                    <img src="/AAPD-Chito-Chat/assets/article-banner-1-be4727c3.png" alt="蛙化現象">
+                                    <div class="d-flex align-items-start my-xs">
+                                        <h3 class="fs-h3 fw-700 text-gray-900 mb-0 me-xs">蛙化現象</h3>
+                                        <a href="#" class="tag tag-primary">生活</a>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-s">
+                                        <ul class="list-unstyled d-flex align-items-center gap-s">
+                                            <li>
+                                                <a class="d-flex" href="#" title="comment">
+                                                    <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">chat
+                                                    </span>
+                                                    <p class="fs-t8">520</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex" href="#" title="comment">
+                                                    <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">favorite
+                                                    </span>
+                                                    <p class="fs-t8">1314</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex" href="#" title="comment">
+                                                    <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">share
+                                                    </span>
+                                                    <p class="fs-t8">111</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#">
+                                             <p class="text-gray-900 fs-t6 text-nowrap align-middle mb-0">看內容<span class="material-symbols-outlined fs-t6 text-black align-middle ms-xxs">arrow_forward_ios</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <!-- 卡片四 -->
+                          <a href="#">
+                              <div class="article-card p-m bg-white rounded-3">
+                                  <img src="/AAPD-Chito-Chat/assets/article-banner-1-be4727c3.png" alt="蛙化現象">
+                                  <div class="d-flex align-items-start my-xs">
+                                      <h3 class="fs-h3 fw-700 text-gray-900 mb-0 me-xs">蛙化現象</h3>
+                                      <a href="#" class="tag tag-primary">生活</a>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center mt-s">
+                                      <ul class="list-unstyled d-flex align-items-center gap-s">
+                                          <li>
+                                              <a class="d-flex" href="#" title="comment">
+                                                  <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">chat
+                                                  </span>
+                                                  <p class="fs-t8">520</p>
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a class="d-flex" href="#" title="comment">
+                                                  <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">favorite
+                                                  </span>
+                                                  <p class="fs-t8">1314</p>
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a class="d-flex" href="#" title="comment">
+                                                  <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">share
+                                                  </span>
+                                                  <p class="fs-t8">111</p>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                      <a href="#">
+                                           <p class="text-gray-900 fs-t6 text-nowrap align-middle mb-0">看內容<span class="material-symbols-outlined fs-t6 text-black align-middle ms-xxs">arrow_forward_ios</span></p>
+                                      </a>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- 卡片五 -->
+                        <a href="#">
+                            <div class="article-card p-m bg-white rounded-3">
+                                <img src="/AAPD-Chito-Chat/assets/article-banner-1-be4727c3.png" alt="蛙化現象">
+                                <div class="d-flex align-items-start my-xs">
+                                    <h3 class="fs-h3 fw-700 text-gray-900 mb-0 me-xs">蛙化現象</h3>
+                                    <a href="#" class="tag tag-primary">生活</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-s">
+                                    <ul class="list-unstyled d-flex align-items-center gap-s">
+                                        <li>
+                                            <a class="d-flex" href="#" title="comment">
+                                                <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">chat
+                                                </span>
+                                                <p class="fs-t8">520</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex" href="#" title="comment">
+                                                <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">favorite
+                                                </span>
+                                                <p class="fs-t8">1314</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex" href="#" title="comment">
+                                                <span class="material-symbols-outlined text-primary fs-t5" style="margin-right: 1px;">share
+                                                </span>
+                                                <p class="fs-t8">111</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#">
+                                         <p class="text-gray-900 fs-t6 text-nowrap align-middle mb-0">看內容<span class="material-symbols-outlined fs-t6 text-black align-middle ms-xxs">arrow_forward_ios</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                  <!-- 分頁器 -->
+                   <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 分隔線 -->
+        <div class="container">
+            <div class="separator my-m" style="height: 1px; background: #D9D9D9;"></div>
+        </div>
+
+        <!-- 文章分類區塊 -->
+        <div class="container">
+            <ul class="article-tab-list nav nav-pills" id="pills-tab" role="tablist">
+                <div class="swiper artabSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide w-auto">
+                            <li class="nav-item article-tab fs-h6 fw-700 me-xs" role="presentation">
+                                <button class="nav-link active btn btn-gray text-nowrap" id="article-all-tab" data-bs-toggle="pill" data-bs-target="#article-all" type="button" role="tab" aria-controls="article-all" aria-selected="true">全部</button>
+                            </li>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <li class="nav-item article-tab fs-h6 fw-700 me-xs" role="presentation">
+                                <button class="nav-link btn btn-gray text-nowrap" id="article-abroad-tab" data-bs-toggle="pill" data-bs-target="#article-abroad" type="button" role="tab" aria-controls="article-abroad" aria-selected="false">留學生活</button>
+                            </li>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <li class="nav-item article-tab fs-h6 fw-700 me-xs" role="presentation">
+                                <button class="nav-link btn btn-gray text-nowrap" id="article-work-tab" data-bs-toggle="pill" data-bs-target="#article-work" type="button" role="tab" aria-controls="article-work" aria-selected="false">就職活動</button>
+                            </li>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <li class="nav-item article-tab fs-h6 fw-700 me-xs" role="presentation">
+                                <button class="nav-link btn btn-gray text-nowrap" id="article-visa-tab" data-bs-toggle="pill" data-bs-target="#article-visa" type="button" role="tab" aria-controls="article-visa" aria-selected="false">簽證申請</button>
+                            </li>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <li class="nav-item article-tab fs-h6 fw-700 me-xs" role="presentation">
+                                <button class="nav-link btn btn-gray text-nowrap" id="article-pt-tab" data-bs-toggle="pill" data-bs-target="#article-pt" type="button" role="tab" aria-controls="article-pt" aria-selected="false">兼職打工</button>
+                            </li>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <li class="nav-item article-tab fs-h6 fw-700 me-xs" role="presentation">
+                                <button class="nav-link btn btn-gray text-nowrap" id="article-usedfurn-tab" data-bs-toggle="pill" data-bs-target="#article-usedfurn" type="button" role="tab" aria-controls="article-usedfurn" aria-selected="false">二手家俱</button>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+
+            <!-- article tab content -->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="article-all" role="tabpanel" aria-labelledby="article-all-tab" tabindex="0">
+                    <h3 class="fs-h3 fw-700 my-m">全部文章</h3>
+                    <ul class="article-card-list list-unstyled">
+                      <!-- 文章一 -->
+                      <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="如何有效學習日語">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">語言</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">如何有效學習日語</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">學習日語的關鍵在於每天的持續練習和豐富的聽、說、讀、寫技能。建議利用語言交換平台和優質的教材，並注重日語文化的理解。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-1-sub-eadc02c0.png" alt="如何有效學習日語">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章二 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="日本動漫的全球影響力">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">動漫</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">日本動漫的全球影響力</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">日本動漫以其獨特的藝術風格和故事情節，深受全球觀眾喜愛。它不僅娛樂，還展示了日本文化的多樣性和創意。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-2-5ba8458b.png" alt="日本動漫的全球影響力">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章三 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="兼職工作與學業平衡">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">打工</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">兼職工作與學業平衡</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">兼職工作能夠幫助增加收入和職場經驗，但要確保不會影響學業進度。制定良好的時間管理計劃，將工作和學習有效地結合</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-3-02ea23cd.png" alt="兼職工作與學業平衡">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章四 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="工作簽證申請指南">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">簽證</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">工作簽證申請指南</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">申請工作簽證前需檢查文件完整性並確保符合條件。填寫申請表格和支付相應費用後，跟進申請進度並準備面試</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-4-28c1efb3.png" alt="工作簽證申請指南">
+                          </section>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="article-abroad" role="tabpanel" aria-labelledby="article-abroad-tab" tabindex="0">
+                    <h3 class="fs-h3 fw-700 my-m">留學生活</h3>
+                    <ul class="article-card-list list-unstyled"></ul>
+                      <!-- 文章一 -->
+                      <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="如何有效學習日語">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">語言</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">如何有效學習日語</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">學習日語的關鍵在於每天的持續練習和豐富的聽、說、讀、寫技能。建議利用語言交換平台和優質的教材，並注重日語文化的理解。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-1-sub-eadc02c0.png" alt="如何有效學習日語">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章二 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="日本動漫的全球影響力">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">動漫</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">日本動漫的全球影響力</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">日本動漫以其獨特的藝術風格和故事情節，深受全球觀眾喜愛。它不僅娛樂，還展示了日本文化的多樣性和創意。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-2-5ba8458b.png" alt="日本動漫的全球影響力">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章三 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="兼職工作與學業平衡">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">打工</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">兼職工作與學業平衡</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">兼職工作能夠幫助增加收入和職場經驗，但要確保不會影響學業進度。制定良好的時間管理計劃，將工作和學習有效地結合</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-3-02ea23cd.png" alt="兼職工作與學業平衡">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章四 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="工作簽證申請指南">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">簽證</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">工作簽證申請指南</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">申請工作簽證前需檢查文件完整性並確保符合條件。填寫申請表格和支付相應費用後，跟進申請進度並準備面試</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-4-28c1efb3.png" alt="工作簽證申請指南">
+                          </section>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="article-work" role="tabpanel" aria-labelledby="article-work-tab" tabindex="0">
+                    <h3 class="fs-h3 fw-700 my-m">就職活動</h3>
+                    <ul class="article-card-list list-unstyled"></ul>
+                      <!-- 文章一 -->
+                      <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="如何有效學習日語">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">語言</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">如何有效學習日語</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">學習日語的關鍵在於每天的持續練習和豐富的聽、說、讀、寫技能。建議利用語言交換平台和優質的教材，並注重日語文化的理解。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-1-sub-eadc02c0.png" alt="如何有效學習日語">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章二 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="日本動漫的全球影響力">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">動漫</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">日本動漫的全球影響力</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">日本動漫以其獨特的藝術風格和故事情節，深受全球觀眾喜愛。它不僅娛樂，還展示了日本文化的多樣性和創意。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-2-5ba8458b.png" alt="日本動漫的全球影響力">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章三 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="兼職工作與學業平衡">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">打工</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">兼職工作與學業平衡</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">兼職工作能夠幫助增加收入和職場經驗，但要確保不會影響學業進度。制定良好的時間管理計劃，將工作和學習有效地結合</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-3-02ea23cd.png" alt="兼職工作與學業平衡">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章四 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="工作簽證申請指南">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">簽證</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">工作簽證申請指南</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">申請工作簽證前需檢查文件完整性並確保符合條件。填寫申請表格和支付相應費用後，跟進申請進度並準備面試</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-4-28c1efb3.png" alt="工作簽證申請指南">
+                          </section>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="article-visa" role="tabpanel" aria-labelledby="article-visa-tab" tabindex="0">
+                    <h3 class="fs-h3 fw-700 my-m">簽證申請</h3>
+                    <ul class="article-card-list list-unstyled"></ul>
+                      <!-- 文章一 -->
+                      <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="如何有效學習日語">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">語言</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">如何有效學習日語</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">學習日語的關鍵在於每天的持續練習和豐富的聽、說、讀、寫技能。建議利用語言交換平台和優質的教材，並注重日語文化的理解。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-1-sub-eadc02c0.png" alt="如何有效學習日語">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章二 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="日本動漫的全球影響力">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">動漫</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">日本動漫的全球影響力</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">日本動漫以其獨特的藝術風格和故事情節，深受全球觀眾喜愛。它不僅娛樂，還展示了日本文化的多樣性和創意。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-2-5ba8458b.png" alt="日本動漫的全球影響力">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章三 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="兼職工作與學業平衡">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">打工</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">兼職工作與學業平衡</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">兼職工作能夠幫助增加收入和職場經驗，但要確保不會影響學業進度。制定良好的時間管理計劃，將工作和學習有效地結合</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-3-02ea23cd.png" alt="兼職工作與學業平衡">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章四 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="工作簽證申請指南">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">簽證</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">工作簽證申請指南</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">申請工作簽證前需檢查文件完整性並確保符合條件。填寫申請表格和支付相應費用後，跟進申請進度並準備面試</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-4-28c1efb3.png" alt="工作簽證申請指南">
+                          </section>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="article-pt" role="tabpanel" aria-labelledby="article-pt-tab" tabindex="0">
+                    <h3 class="fs-h3 fw-700 my-m">兼職打工</h3>
+                    <ul class="article-card-list list-unstyled"></ul>
+                      <!-- 文章一 -->
+                      <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="如何有效學習日語">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">語言</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">如何有效學習日語</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">學習日語的關鍵在於每天的持續練習和豐富的聽、說、讀、寫技能。建議利用語言交換平台和優質的教材，並注重日語文化的理解。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-1-sub-eadc02c0.png" alt="如何有效學習日語">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章二 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="日本動漫的全球影響力">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">動漫</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">日本動漫的全球影響力</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">日本動漫以其獨特的藝術風格和故事情節，深受全球觀眾喜愛。它不僅娛樂，還展示了日本文化的多樣性和創意。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-2-5ba8458b.png" alt="日本動漫的全球影響力">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章三 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="兼職工作與學業平衡">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">打工</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">兼職工作與學業平衡</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">兼職工作能夠幫助增加收入和職場經驗，但要確保不會影響學業進度。制定良好的時間管理計劃，將工作和學習有效地結合</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-3-02ea23cd.png" alt="兼職工作與學業平衡">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章四 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="工作簽證申請指南">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">簽證</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">工作簽證申請指南</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">申請工作簽證前需檢查文件完整性並確保符合條件。填寫申請表格和支付相應費用後，跟進申請進度並準備面試</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-4-28c1efb3.png" alt="工作簽證申請指南">
+                          </section>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="article-usedfurn" role="tabpanel" aria-labelledby="article-usedfurn-tab" tabindex="0">
+                    <h3 class="fs-h3 fw-700 my-m">二手家俱</h3>
+                    <ul class="article-card-list list-unstyled"></ul>
+                      <!-- 文章一 -->
+                      <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="如何有效學習日語">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">語言</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">如何有效學習日語</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">學習日語的關鍵在於每天的持續練習和豐富的聽、說、讀、寫技能。建議利用語言交換平台和優質的教材，並注重日語文化的理解。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-1-sub-eadc02c0.png" alt="如何有效學習日語">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章二 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="日本動漫的全球影響力">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">動漫</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">日本動漫的全球影響力</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">日本動漫以其獨特的藝術風格和故事情節，深受全球觀眾喜愛。它不僅娛樂，還展示了日本文化的多樣性和創意。</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-2-5ba8458b.png" alt="日本動漫的全球影響力">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章三 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="兼職工作與學業平衡">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">打工</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">兼職工作與學業平衡</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">兼職工作能夠幫助增加收入和職場經驗，但要確保不會影響學業進度。制定良好的時間管理計劃，將工作和學習有效地結合</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-3-02ea23cd.png" alt="兼職工作與學業平衡">
+                          </section>
+                        </a>
+                      </li>
+                       <!-- 文章四 -->
+                       <li class="article-card rounded-2 bg-white border border-gray-100 p-m d-flex justify-content-between mb-m">
+                        <a href="#" title="工作簽證申請指南">                       
+                          <section class="article-card-left flex-grow-1 me-s mb-0" style="width: 187px;">
+                            <div class="tag tag-primary mb-xxs">簽證</div>
+                              <h4 class="fs-h3 fw-700 text-gray-900 text-truncate">工作簽證申請指南</h4>
+                              <p class="fs-t6 text-gray-900 article-text-truncate" style="line-height: 20px;">申請工作簽證前需檢查文件完整性並確保符合條件。填寫申請表格和支付相應費用後，跟進申請進度並準備面試</p>
+                              <ul class="list-unstyled d-flex align-items-center">
+                                <li class="me-s mb-0">
+                                  <a class="d-flex" href="#" title="comment">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread</span>
+                                    <p class="fs-t7 mb-0">32</p>
+                                  </a>
+                                </li>
+                                <li class="me-s">
+                                  <a class="d-flex" href="#" title="like">
+                                    <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="d-flex" href="#" title="share">
+                                    <span class="material-symbols-outlined text-primary fs-t5">share</span>
+                                    <p class="fs-t7 mb-0">195</p>
+                                  </a>
+                                </li>
+                              </ul>
+                          </section>
+                          <section class="article-card-right flex-shrink-0">
+                            <img class="rounded-1 object-fit-cover" style="width: 112px; height: 133.189px;" src="/AAPD-Chito-Chat/assets/article-4-28c1efb3.png" alt="工作簽證申請指南">
+                          </section>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 參與活動 頁籤 -->
+    <div class="tab-pane" id="event" role="tabpanel" aria-labelledby="event-tab" tabindex="0">
+        <!-- search bar -->
+         <div class="container">
+             <form class="article-search-input position-relative my-m" role="search">
+                 <span class="text-gray-500 material-symbols-outlined position-absolute top-50 translate-middle-y" style="left: 10px; width: 20px; height: 20px;">search</span>
+                 <input class="form-control d-inline-block" type="search" placeholder="搜尋" aria-label="Search">
+                 <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+             </form>
+         </div>
+
+        <div class="container">
+            <section class="online-event">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="fs-h3 fw-700 text-gray-900">我的線上活動</h3>
+                    <a class="fs-t6 text-gray-900 opacity-50" href="#">查看清單<span class="material-symbols-outlined fs-t7 ms-xxs ">arrow_forward_ios</span></a>
+                </div>
+                <div class="p-m border border-gray-100 rounded-3 bg-white">
+                    <p class="fs-t4 text-gray-300 mb-0">目前還沒有預約任何活動...</p>
+                    <div class="border mt-m" style="background-color: #D9D9D9; height: 1px;"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- inpage navbar -->
+        <div class="container">
+            <section class="event-selector d-flex justify-content-between align-items-center my-m">
+                <ul class="nav nav-pills fs-h6 fw-700 p-xs border border-gray-100 rounded-2 me-xs" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active btn btn-white me-xs" style="width: 56px;" id="online-event-tab" data-bs-toggle="pill" data-bs-target="#online-event" type="button" role="tab" aria-controls="online-event" aria-selected="true">線上</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link nav-off-event btn btn-white" style="width: 56px;" id="offline-event-tab" data-bs-toggle="pill" data-bs-target="#offline-event" type="button" role="tab" aria-controls="offline-event" aria-selected="false">線下</button>
+                    </li>
+                </ul>
+                <!-- 分隔線 -->
+                <div class="seperator bg-gray-100 border border-gray-100 me-xs" style="height: 49px; width: 1px;"></div>
+                <!-- dropdown 區域 -->
+                <ul class="nav nav-pills fs-h6 fw-700">
+                    <li class="nav-item dropdown">
+                      <button class="nav-link event-dropdown dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">類別</button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">推薦活動</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">區域</button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">推薦活動</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">時間</button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">推薦活動</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- 線上活動 tab 內容 -->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="online-event" role="tabpanel" aria-labelledby="online-event-tab" tabindex="0">
+                    <div class="container">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="fs-h3 fw-700 text-gray-900 mb-0">全部活動</h3>
+                            <button type="button" class="fs-t6 text-gray-900 border-0 opacity-50 mb-0" disabled>重置篩選<span class="material-symbols-outlined fs-t6 ms-xxs align-middle">undo</span></button>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <ul class="event-list list-unstyled my-m">
+                            <!-- 活動一 -->
+                            <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                              <div class="d-flex align-items-end">
+                                <!-- 活動介紹 -->
+                                <div class="event-card-intro me-s" style="width: 189px;">
+                                  <a href="#" class="text-nowrap tag tag-primary me-xs">文化</a>
+                                  <a href="#" class="text-nowrap tag tag-secondary">預約 • 12人 </a>
+                                  <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">J-pop：日本流行音樂的全球魅力</h3>
+                                  <p class="fs-t6 article-text-truncate">J-pop（日本流行音樂）以其多樣性和創新性贏得了全球年輕人的喜愛。從嵐到AKB48，這些音樂作品融合了流行、電子和搖滾等風格，展現出獨特的音樂美感。J-pop不僅在日本國內風靡一時，還在亞洲、歐美等地廣受歡迎。日本音樂人的創作才華和對視覺表現的追求，使J-pop成為全球音樂市場的重要一員，推動了日本文化在國際間的交流和傳播。</p>
+                                </div>
+                                <!-- 活動圖片 -->
+                                <div class="event-card-img">
+                                  <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/event-1-e64d7290.png" alt="J-pop：日本流行音樂的全球魅力">
+                                </div>
+                              </div>
+                              <!-- 活動時間、地區 -->
+                              <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                <!-- 我是分隔線 -->
+                                <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                              </ul>
+                            </li>
+                             <!-- 活動二 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-primary me-xs">留學</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 8人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">書桌放什麼？</h3>
+                                    <p class="fs-t6 article-text-truncate">標題：書桌整理：提升效率的第一步。書桌整理不僅是環境整潔的開始，更是提升工作效率和心靈清潔的重要一環。一個井然有序的工作空間，不僅讓人感到舒適，還能幫助集中注意力，提高工作效率。將文件歸檔整理，清除多餘物品，並保持清潔的工作環境，能夠幫助減少分心，讓每天的工作更加流暢。這些簡單的整理技巧不僅改善了工作效率，還能為生活帶來更多的秩序和滿足感。</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/event-2-ed54a871.png" alt="書桌放什麼？">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                              <!-- 活動三 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-primary me-xs">語言</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 20人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">語言交流會</h3>
+                                    <p class="fs-t6 article-text-truncate">歡迎參加語言交流會，通過小組討論和互動遊戲提升語言技能，結交來自世界各地的新朋友！</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/event-3-0ca9ef0b.png" alt="語言交流會">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                              <!-- 活動四 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-primary me-xs">就職</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 22人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">企業面試準備</h3>
+                                    <p class="fs-t6 article-text-truncate">面試前需研究公司背景、準備回答常見問題並提前訓練自信表達。穿著適當且準時到達面試地點，展現出對職位的熱情和專業素養。</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/event-4-5d4d3b90.png" alt="企業面試準備">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                              <!-- 活動五 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-primary me-xs">動漫</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 8人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">探索日本動漫文化</h3>
+                                    <p class="fs-t6 article-text-truncate">日本動漫以其多樣化的類型和深刻的故事情節吸引全球觀眾。探索其歷史、主題和影響力，並了解如何在日本深入體驗這一文化現象。</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/event-5-41d93b51.png" alt="探索日本動漫文化">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="tab-pane fade" id="offline-event" role="tabpanel" aria-labelledby="offline-event-tab" tabindex="0">
+                    <!-- 線下活動 -->
+                    <div class="container">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="fs-h3 fw-700 text-gray-900 mb-0">全部活動</h3>
+                            <button type="button" class="fs-t6 text-gray-900 border-0 opacity-50 mb-0" disabled>重置篩選<span class="material-symbols-outlined fs-t6 ms-xxs align-middle">undo</span></button>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <ul class="event-list list-unstyled my-m">
+                            <!-- 活動一 -->
+                            <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                              <div class="d-flex align-items-end">
+                                <!-- 活動介紹 -->
+                                <div class="event-card-intro me-s" style="width: 189px;">
+                                  <a href="#" class="text-nowrap tag tag-tertiary me-xs">文化</a>
+                                  <a href="#" class="text-nowrap tag tag-secondary">預約 • 2人 </a>
+                                  <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">揪團去夏日慶典</h3>
+                                  <p class="fs-t6 article-text-truncate">來感受夏日慶典的熱情與歡樂吧！搭伴共赴煙火盛宴，品味美食，感受流光溢彩的瞬間，讓我們一同創造美好回憶！</p>
+                                </div>
+                                <!-- 活動圖片 -->
+                                <div class="event-card-img">
+                                  <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/event-off-1-d247236c.png" alt="揪團去夏日慶典">
+                                </div>
+                              </div>
+                              <!-- 活動時間、地區 -->
+                              <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                <!-- 我是分隔線 -->
+                                <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                              </ul>
+                            </li>
+                             <!-- 活動二 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-tertiary me-xs">語言</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 8人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">語言交流會</h3>
+                                    <p class="fs-t6 article-text-truncate">歡迎參加語言交流會，通過小組討論和互動遊戲提升語言技能，結交來自世界各地的新朋友！</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/event-3-0ca9ef0b.png" alt="語言交流會">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                              <!-- 活動三 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-tertiary me-xs">動漫</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 18人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">領域展開？</h3>
+                                    <p class="fs-t6 article-text-truncate">《咒術迴戰》中的「領域展開」可能包括揭示更多咒術師組織的內部運作、不同邪惡力量的來源與背景、主角的成長背景故事等等。這些展開通常能夠吸引讀者的注意力，加深他們對作品世界的理解和投入感。</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/event-off-3-71d8e9d4.png" alt="領域展開？">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                              <!-- 活動四 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-tertiary me-xs">就業</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 2人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">就業指南研討會</h3>
+                                    <p class="fs-t6 article-text-truncate">這場研討會旨在為即將大學畢業的學生提供全面的就業指導。我們將討論大學畢業後的就業趨勢和挑戰，以及如何準備和撰寫出色的履歷和求職信。活動還包括面試技巧的分享和模擬面試，幫助參加者準備迎接真實的職場挑戰。</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/event-off-4-0e93e362.png" alt="就業指南研討會">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                              <!-- 活動五 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-tertiary me-xs">寵物</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 8人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">狗狗奔跑日</h3>
+                                    <p class="fs-t6 article-text-truncate">歡迎參加語言交流會，通過小組討論和互動遊戲提升語言技能，結交來自世界各地的新朋友！</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="/AAPD-Chito-Chat/assets/event-off-5-44cb1aba.png" alt="狗狗奔跑日">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+        </div>
+  </div>
+        
+
+
+    <div class="fixed-bottom mx-auto" style="width: 375px;">
+    <section class="footer bg-white py-xs text-gray-300 fs-h6 fw-700 mt-3xl shadow-md position-relative">
+        <a href="index.html" class="footer-home-btn text-white bg-primary rounded-circle position-absolute top-25 start-50 translate-middle">
+            <div class="position-relative" style="width: 40px; height: 40px;">
+                <span class="material-symbols-outlined position-absolute top-50 start-50 translate-middle">home</span>
+            </div>
+        </a>
+    
+        <!-- <a href="#" class="footer-home-btn text-white material-symbols-outlined bg-primary rounded-circle position-absolute top-25 start-50 translate-middle p-xs" style="width: 40px; height: 40px;">home
+        </a> -->
+    
+        <ul class="nav d-flex justify-content-around">
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="friends.html" style="width: 65px;" class="position-relative ">
+                    <span class="material-symbols-outlined">handshake</span>
+                    <p class="mb-0">找朋友</p>
+                    <span class="rounded-circle bg-compl-500 position-absolute translate-middle" style="width: 8px; height: 8px; right: 10px; top: 3px;"></span>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="article.html" style="width: 65px;" class=" text-primary">
+                    <div class="mb-tiny">
+                        <span class="mgc_balloon_2_line fs-h2"></span>
+                    </div>
+                    <p class="mb-0">活動</p>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-end text-center" >
+                <a href="index.html" style="width: 65px;" class="pt-xl ">
+                <p class="mb-0">首頁</p>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="learning-main.html" style="width: 65px;" class=" ">
+                    <span class="material-symbols-outlined">import_contacts</span>
+                    <p class="mb-0">學日文</p>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="myChat.html" style="width: 65px;" class=" ">
+                    <span class="material-symbols-outlined">person</span>
+                    <p class="mb-0">個人</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

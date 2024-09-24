@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/AAPD-Chito-Chat/assets/main-3b99183e.js"></script>
-    <link rel="stylesheet" href="/AAPD-Chito-Chat/assets/main-7bf32d33.css">
+    <title>學日文</title>
+    <script type="module" crossorigin src="/AAPD-Chito-Chat/assets/main-5b7a05ca.js"></script>
+    <link rel="stylesheet" href="/AAPD-Chito-Chat/assets/main-6f73b5d1.css">
   </head>
-  <body class="header-bg-learning" style="padding-top: 54px;">
+  <body class="header-bg-learning" style="padding-top: 54px; padding-bottom: 75px;">
     <section class="learning-bg-top fixed-top" style="width: 375px; margin: 0 auto;">
     <div class="header-top d-flex justify-content-between">
         <time class="header-time-text">9:41</time>
@@ -29,13 +29,13 @@
     <div class="container bg-gray-50">
         <ul class="nav nav-tabs justify-content-center" id="learningTab" role="tablist">
             <li class="nav-item w-50" role="presentation">
-              <button class="nav-link w-100 text-center active fs-t3 fw-700 py-s ps-0 pe-xs d-flex flex-column align-items-center bg-gray-50" id="course-tab" data-bs-toggle="tab" data-bs-target="#course" type="button" role="tab" aria-controls="course" aria-selected="true">課程安排
-                <span class="w-100 active-deco mt-xxs"></span>
+              <button class="nav-link nav-learning active w-100 text-center fs-t3 fw-700 py-s ps-0 pe-xs d-flex flex-column align-items-center bg-gray-50" id="course-tab" data-bs-toggle="tab" data-bs-target="#course" type="button" role="tab" aria-controls="course" aria-selected="true">課程安排
+                <span class="active-deco w-100 mt-xxs"></span>
               </button>
             </li>
             <li class="nav-item w-50" role="presentation">
-              <button class="nav-link w-100 text-center fs-t3 fw-700 py-s ps-xs pe-0 d-flex flex-column align-items-center bg-gray-50" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">進度複習
-                <span class="w-100 active-deco mt-xxs"></span>
+              <button class="nav-link nav-learning w-100 text-center fs-t3 fw-700 py-s ps-xs pe-0 d-flex flex-column align-items-center bg-gray-50" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">進度複習
+                <span class="active-deco w-100 mt-xxs"></span>
               </button>
             </li>
           </ul>
@@ -205,6 +205,53 @@
 
 
 
-    <footer class="footer">我是 footer</footer>    
+    <div class="fixed-bottom mx-auto" style="width: 375px;">
+    <section class="footer bg-white py-xs text-gray-300 fs-h6 fw-700 mt-3xl shadow-md position-relative">
+        <a href="index.html" class="footer-home-btn text-white bg-primary rounded-circle position-absolute top-25 start-50 translate-middle">
+            <div class="position-relative" style="width: 40px; height: 40px;">
+                <span class="material-symbols-outlined position-absolute top-50 start-50 translate-middle">home</span>
+            </div>
+        </a>
+    
+        <!-- <a href="#" class="footer-home-btn text-white material-symbols-outlined bg-primary rounded-circle position-absolute top-25 start-50 translate-middle p-xs" style="width: 40px; height: 40px;">home
+        </a> -->
+    
+        <ul class="nav d-flex justify-content-around">
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="friends.html" style="width: 65px;" class="position-relative ">
+                    <span class="material-symbols-outlined">handshake</span>
+                    <p class="mb-0">找朋友</p>
+                    <span class="rounded-circle bg-compl-500 position-absolute translate-middle" style="width: 8px; height: 8px; right: 10px; top: 3px;"></span>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="article.html" style="width: 65px;" class=" ">
+                    <div class="mb-tiny">
+                        <span class="mgc_balloon_2_line fs-h2"></span>
+                    </div>
+                    <p class="mb-0">活動</p>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-end text-center" >
+                <a href="index.html" style="width: 65px;" class="pt-xl ">
+                <p class="mb-0">首頁</p>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="learning-main.html" style="width: 65px;" class=" text-primary">
+                    <span class="material-symbols-outlined">import_contacts</span>
+                    <p class="mb-0">學日文</p>
+                </a>
+            </li>
+            <li class="d-flex flex-column align-items-center justify-content-center text-center gap-xxs">
+                <a href="myChat.html" style="width: 65px;" class=" ">
+                    <span class="material-symbols-outlined">person</span>
+                    <p class="mb-0">個人</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
+    
   </body>
 </html>
